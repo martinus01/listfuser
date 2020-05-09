@@ -15,15 +15,17 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
-    TextView txtHeader;
-    TextView txtFooter;
+    TextView txtMission;
+    TextView txtFusee;
+    TextView txtAgencies;
     View layout;
 
     ViewHolder(View v){
         super(v);
         layout=v;
-        txtHeader=(TextView) v.findViewById(R.id.titre_mission);
-        txtFooter=(TextView) v.findViewById(R.id.titre_fusee);
+        txtMission=(TextView) v.findViewById(R.id.titre_mission);
+        txtFusee=(TextView) v.findViewById(R.id.titre_fusee);
+        txtAgencies=(TextView) v.findViewById(R.id.titre_agency);
 
 
     }
@@ -62,11 +64,12 @@ public Listadapter.ViewHolder onCreateViewHolder(
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         final Launch currentLaunch = values.get(position);
-        holder.txtHeader.setText(currentLaunch.getName());
-        holder.txtFooter.setText(currentLaunch.getWindowstart());
+        holder.txtMission.setText(currentLaunch.getName());
+        holder.txtFusee.setText(currentLaunch.getWindowstart());
+        holder.txtAgencies.setText(currentLaunch.getWindowend());
 
 
-        holder.txtHeader.setOnClickListener(new View.OnClickListener() {
+        holder.txtMission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //remove(position);
