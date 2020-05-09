@@ -8,9 +8,11 @@ public class Launch {
     private String name;
     private String windowstart;
     private String windowend;
+    /*
     private List<Location> location;
+    /*
     private List<Rocket> rocket;
-    private List<Missions>missions;
+    private List<Missions>missions;*/
 
 
 
@@ -25,15 +27,16 @@ public class Launch {
     public String getWindowend() {
         return windowend;
     }
-    public List<Location> getLocation(){
+/*
+    public List<Location> getLocation() {
         return location;
+    }
+/*
+    public List<Rocket> getRocket() {
+        return rocket;
     }
 
     public List<Missions> getMissions() {
         return missions;
-    }
-
-    public List<Rocket> getRockets() {
-        return rocket;
-    }
+    }*/
 }
