@@ -15,28 +15,30 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
-    TextView txtHeader;
-    TextView txtFooter;
+    TextView txtMission;
+    TextView txtFusee;
+    TextView txtAgencies;
     View layout;
 
     ViewHolder(View v){
         super(v);
         layout=v;
-        txtHeader=(TextView) v.findViewById(R.id.firstLine);
-        txtFooter=(TextView) v.findViewById(R.id.secondLine);
+        txtMission=(TextView) v.findViewById(R.id.titre_mission);
+        txtFusee=(TextView) v.findViewById(R.id.titre_fusee);
+        txtAgencies=(TextView) v.findViewById(R.id.titre_agency);
 
 
     }
 }
 
-public void add(int position,Launch item){
-    values.add(position, item);
-    notifyItemInserted(position);
+    public void add(int position,Launch item){
+        values.add(position, item);
+        notifyItemInserted(position);
 }
-    public void remove(int position) {
+    /*public void remove(int position) {
         values.remove(position);
         notifyItemRemoved(position);
-    }
+    }*/
 
     // Provide a suitable constructor (depends on the kind of dataset)
     public Listadapter(List<Launch> myDataset) {
@@ -61,15 +63,18 @@ public Listadapter.ViewHolder onCreateViewHolder(
     public void onBindViewHolder(ViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        final Launch currentPokemon = values.get(position);
-        holder.txtHeader.setText(currentPokemon.getName());
-        holder.txtFooter.setText(currentPokemon.getWindowstart());
+        final Launch currentLaunch = values.get(position);
+        holder.txtMission.setText(currentLaunch.getName());
+        holder.txtFusee.setText(currentLaunch.getWindowstart());
+        holder.txtAgencies.setText(currentLaunch.getWindowend());
 
 
-        holder.txtHeader.setOnClickListener(new View.OnClickListener() {
+        holder.txtMission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                remove(position);
+                //remove(position);
+
+
             }
         });
 
@@ -81,5 +86,6 @@ public Listadapter.ViewHolder onCreateViewHolder(
     public int getItemCount() {
         return values.size();
     }
+
 
 }

@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String BASE_URL="https://launchlibrary.net/";
+    private final String BASE_URL="https://launchlibrary.net/1.4/";
     private RecyclerView recyclerView;
     private Listadapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sharedPreferences = getSharedPreferences("application_esiea", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("application_fusee", Context.MODE_PRIVATE);
         gson = new GsonBuilder()
                 .setLenient()
                 .create();
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<RestLaunchResponse> call, Response<RestLaunchResponse> response) {
                 if(response.isSuccessful() && response.body() != null){
                     List<Launch> launchlist=response.body().getLaunches();
-                    //  Toast.makeText(getApplicationContext(), "API Success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "API Success", Toast.LENGTH_SHORT).show();
                     saveList(launchlist);
                     showList(launchlist);
                 }else{
@@ -103,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void saveList(List<Launch> pokemonList) {
-        String jsonString= gson.toJson(pokemonList);
+    private void saveList(List<Launch> launchlist) {
+        String jsonString= gson.toJson(launchlist);
 
         sharedPreferences
                 .edit()
