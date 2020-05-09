@@ -22,8 +22,8 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
     ViewHolder(View v){
         super(v);
         layout=v;
-        txtHeader=(TextView) v.findViewById(R.id.firstLine);
-        txtFooter=(TextView) v.findViewById(R.id.secondLine);
+        txtHeader=(TextView) v.findViewById(R.id.titre_mission);
+        txtFooter=(TextView) v.findViewById(R.id.titre_fusee);
 
 
     }
