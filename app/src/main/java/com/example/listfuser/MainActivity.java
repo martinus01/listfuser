@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String BASE_URL="https://launchlibrary.net/";
+    private final String BASE_URL="https://raw.githubusercontent.com/martinus01/listfuser/master/";
     private RecyclerView recyclerView;
     private Listadapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -65,12 +65,20 @@ public class MainActivity extends AppCompatActivity {
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-
+        //context=context;
 
         // define an adapter
-        mAdapter = new Listadapter(launchlist);
+        mAdapter = new Listadapter(launchlist, new Listadapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Launch item) {
+                navigatetoDetalails(item);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
+    }
+
+    private void navigatetoDetalails(Launch item) {
+        Toast.makeText(getApplicationContext(),"TODO navigate",Toast.LENGTH_SHORT).show();
     }
 
     private void makeApiCall(){
@@ -103,8 +111,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void saveList(List<Launch> pokemonList) {
-        String jsonString= gson.toJson(pokemonList);
+    private void saveList(List<Launch> launchList) {
+        String jsonString= gson.toJson(launchList);
 
         sharedPreferences
                 .edit()
