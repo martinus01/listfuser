@@ -29,7 +29,9 @@
       "agenciesabbrev": "CNSA",
       "lspname": "ExPace",
       "lspabbrev": "EP",
-      "lspcountryCode": "CHN"
+      "lspcountryCode": "CHN",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "Atlas V 501 | OTV-6 (X-37B) (USSF-7)",
@@ -57,7 +59,9 @@
       "agenciesabbrev": "USAF",
       "lspname": "United Launch Alliance",
       "lspabbrev": "ULA",
-      "lspcountryCode": "USA"
+      "lspcountryCode": "USA",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "Falcon 9 Block 5 | Starlink 7",
@@ -86,7 +90,9 @@
       "agenciescountryCode": "USA",
       "lspname": "SpaceX",
       "lspabbrev": "SpX",
-      "lspcountryCode": "USA"
+      "lspcountryCode": "USA",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
 
@@ -116,7 +122,9 @@
       "agenciescountryCode": "JPN",
       "lspname": "Mitsubishi Heavy Industries",
       "lspabbrev": "MHI",
-      "lspcountryCode": "JPN"
+      "lspcountryCode": "JPN",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "Falcon 9 Block 5 | SpX-DM2 (Demonstration Mission 2)",
@@ -144,7 +152,9 @@
       "agenciescountryCode":"inconnu agencies country code",
       "lspname": "SpaceX",
       "lspabbrev": "SpX",
-      "lspcountryCode": "USA"
+      "lspcountryCode": "USA",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "LauncherOne | Test Flight",
@@ -173,7 +183,9 @@
       "agenciescountryCode":"inconnu agencies country code",
       "lspname": "Virgin Orbit",
       "lspabbrev": "VO",
-      "lspcountryCode": "USA"
+      "lspcountryCode": "USA",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "GSLV Mk II | GISAT-1",
@@ -202,7 +214,9 @@
       "agenciescountryCode": "IND",
       "lspname": "Indian Space Research Organization",
       "lspabbrev": "ISRO",
-      "lspcountryCode": "IND"
+      "lspcountryCode": "IND",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "Soyuz 2.1a | Bars-M No. 3",
@@ -231,7 +245,9 @@
       "agenciescountryCode": "RUS",
       "lspname": "Russian Space Forces",
       "lspabbrev": "VKS",
-      "lspcountryCode": "RUS"
+      "lspcountryCode": "RUS",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "SSLV  | Demo 1",
@@ -260,7 +276,9 @@
       "agenciescountryCode": "IND",
       "lspname": "Indian Space Research Organization",
       "lspabbrev": "ISRO",
-      "lspcountryCode": "IND"
+      "lspcountryCode": "IND",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
       "mission": "PSLV-CA | RISAT-2BR2",
@@ -289,7 +307,9 @@
       "agenciescountryCode": "IND",
       "lspname": "Indian Space Research Organization",
       "lspabbrev": "ISRO",
-      "lspcountryCode": "IND"
+      "lspcountryCode": "IND",
+      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     }
   ]
 
